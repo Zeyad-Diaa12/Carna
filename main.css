@@ -87,8 +87,8 @@ header{
 }
 .login_signin{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 85%;
 }
 .login_signin a{
     text-decoration: none;
@@ -96,6 +96,7 @@ header{
     background: var(--main);
     padding: 5px;
     margin-top: 10px;
+    margin-left: 20px;
     width: 100%;
     font-size: 30px;
     border-radius: 15px;
