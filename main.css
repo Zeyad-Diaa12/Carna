@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root{
     --main:#1689d1;
     --secondary:#7357e2;
@@ -10,7 +11,9 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 html{
     scroll-behavior: smooth;
@@ -91,22 +94,24 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-left: 100px;
 }
 .login_signin{
     display: flex;
     align-items: center;
-    width: 85%;
+    justify-content: space-between;
+    width: 90%;
 }
 .login_signin a{
     text-decoration: none;
     color: var(--color5);
     background: var(--main);
     padding: 5px;
-    margin-top: 10px;
-    margin-left: 20px;
-    width: 100%;
+    margin-top: 10;
+    width: 40%;
     font-size: 30px;
+    font-weight: 400;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
 }
