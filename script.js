@@ -1,4 +1,5 @@
 let active = document.querySelector('.nav').querySelectorAll('li');
+
 console.log(active)
 active.forEach(element =>{
     element.addEventListener('click',function(){
@@ -7,5 +8,6 @@ active.forEach(element =>{
         this.classList.add('active')
     })
 })
+
 
 
