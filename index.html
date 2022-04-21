@@ -5,43 +5,205 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Carna - Website</title>
 </head>
 <body>
-   <header>
-    <img class="logo" src="images/logo.png" alt="logo">
-    <ul class="nav">
-        <li class="active"><a href="#home">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Brands</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-   </header>
+    <!-- Header Start -->
+    <div class="header_light">
+        <!-- <img class="logo" src="images/logo.png" alt="logo"> -->
+        <label class="header_logo">CARNA</label>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#services_">Services</a></li>
+            <li><a href="#brands_">Brands</a></li>
+            <li><a href="#team_">Team</a></li>
+            <li><a href="#contact_">Contact Us</a></li>
+            <button onclick="dark_mode()">Dark</button>
+            <button onclick="light_mode()">Light</button>
+        </ul>
+   </div>
+   <!-- Header End -->
+
+   <!-- Welcome Page Start -->
    <div class="welcome_page" id="home">
         <div class="welcome_login">
             <p>Welcome to <span>CARNA</span><br>Not only a car shop!</p>
             <div class="login_signin">
-                <a href="#">Sign Up</a>
                 <a href="#">Login</a>
+                <p>OR</p>
+                <a href="#">Sign Up</a>
             </div>
         </div>
    </div>
-   <div class="container">
-        <div class="about">
+   <!-- Welcome Page End -->
 
-        </div>
-        <div class="brands">
+   <!-- About Start -->
+   <br id="services_">
+   <br>
+   <br>
+    <div class="services">
+        <h1><span>Services</span> We Offer</h1>
+        <div class="services_cards">
+            <div>
+                <i class="fa-solid fa-camera-retro"></i>
+                <div class="services_body">
+                    <h3>Gallery</h3>
+                    <p>We have a gallery that contains different brands of cars</p>
 
+                </div>      
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <div class="services_body">
+                    <h3>Informations</h3>
+                    <p>We offer you lots of information you want about a car to help you make your decision</p>
+                </div>
+            </div>
+    
+            <div>
+                <i class="fa-solid fa-comments"></i>
+                <div class="services_body">
+                    <h3>Reviews</h3>
+                    <p>You can see reviews of others about the car you want to buy</p>
+                </div>
+            </div>
         </div>
-        <div class="contacts">
 
+    </div>
+    <!-- About End -->
+
+    <!-- Brands Start -->
+    <br id="brands_">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="brands">
+        <h1><span>Brands</span> we support</h1>
+        <div class="brands_container">
+            <div class="image" >
+                <a href="#" target="blank_"><img id="bugatti" src="images/Bugatti/Bugatti Logo.png" alt="Bugatti"></a>
+            </div>
+            <div class="image">
+                <a href="#" target="blank_"><img src="images/Porsche/Porsche Logo.png" alt="Porsche"></a>
+            </div>
+            <div class="image" > 
+                <a href="#" target="blank_"><img id="royce" src="images/Rolls Royce/Rolls Royce Logo.png" alt="Rolls Royce"></a>
+           </div>
+            <div class="image" >
+                <a href="#" target="blank_"><img src="images/Tesla/Tesla Logo.png" alt="Tesla"></a>
+            </div>
+            <div class="image" >
+                <a href="#" target="blank_"><img src="images/BMW/BMW Logo.png" alt="BMW"></a>
+            </div>
+            <div class="image">
+                <a href="#" target="blank_"><img src="images/Toyota/Toyota Logo.png" alt="Toyota"></a>
+            </div>
+            <div class="image" >
+                <a href="#" target="blank_"><img src="images/Lamborghini/Lamborghini Logo.png" alt="Lamborghini"></a>
+            </div>
+            <div class="image" >
+                 <a href="#" target="blank_"><img src="images/Nissan/Nissan Logo.png" alt="Nissan"></a>
+            </div>
+            
         </div>
-   </div>
+    </div>
+    <!-- Brands End -->
+
+    <!-- Team Start -->
+    <br id="team_">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="team">
+        <h1>Our <span>Team</span></h1>
+        <div class="team-container">
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Zeyad D.Abdallah</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Ziad M.Elsayed</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Ziad M.Hassan</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Zeiad H.Ahmed</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Zeiad H.Hassan</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Zeyad A.Abdelalem</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Eyad A.Ramzy</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="member">
+                <img class="member-image" src="images/elon_musk.png" alt="">
+                <h3>Zeyad M.Khedr</h3>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <br id="contact_">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="contact">
+        <h1><span>Contact</span> Us</h1>
+        <div class="contact-container">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="E-Mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="message" cols="10" rows="10" placeholder="Enter your message...."></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
    <footer>
-
+        <p>Copyright &copy; 2022 Carna</p>
    </footer>
+   <!-- Footer End -->
    <script src="script.js"></script>
 </body>
 </html>
