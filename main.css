@@ -20,7 +20,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
 }
 
@@ -54,11 +53,6 @@ html{
     position: fixed;
 }
 
-/* .logo{
-    width: 80px;
-    height: auto;
-    cursor: pointer;
-} */
 .header_logo{
     font-size: 40px;
     color: var(--main);
@@ -297,7 +291,7 @@ html{
     color: var(--main);
 }
 
-.member {
+.member-light {
     width:24%;
     border-radius: 10px;
     margin-right: 5px;
@@ -307,6 +301,19 @@ html{
     box-shadow: 0 1px 20px rgba(0, 0, 0, .3);
     background: var(--color5);
 }
+
+.member-dark {
+    width:24%;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, .3);
+    background: var(--color6);
+    color: var(--color5);
+}
+
 .member i {
     font-size: 30px;
     margin-left: 5px;
@@ -329,8 +336,11 @@ html{
     padding: 10px;
 }
 
-.fa-github{
+.github-light{
     color: #000000;
+}
+.github-dark{
+    color: #ffffff;
 }
 .fa-linkedin{
     color: #0A66C2;
