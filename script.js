@@ -1,17 +1,17 @@
-// let active = document.querySelector('.nav').querySelectorAll('li');
+let active = document.querySelector('.nav').querySelectorAll('li');
 let element=document.body;
 let header=document.querySelector('.header_light');
 let member_card=document.querySelectorAll('.member-light');
 let github=document.querySelectorAll('.github-light');
 let anchor=document.querySelector('.nav').querySelectorAll('a');
 
-// console.log(anchor);
-// active.forEach(element =>{
-//     element.addEventListener('click',function(){
-//         active.forEach(nav=>nav.classList.remove('active'))
-//         this.classList.add('active')
-//     })
-// })
+
+active.forEach(element =>{
+    element.addEventListener('click',function(){
+        active.forEach(nav=>nav.classList.remove('active'))
+        this.classList.add('active')
+    })
+})
 
 function dark_mode(){
     element.classList.add("dark_mode");
@@ -45,4 +45,15 @@ function light_mode(){
     }
 }
 
-
+function sendMail()
+{
+    let body=document.getElementById('#body_message');
+    let subject=document.querySelector('.subject_message');
+    
+    // Opens email 
+    window.location="mailto:zeyaddiaa201@gmail.com?subject="+subject.value+"&body="+body.value;
+    
+    // Clear data after sending email
+    body.value='';
+    subject.value='';
+}
