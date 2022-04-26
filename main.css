@@ -16,6 +16,11 @@
     color: var(--color5);
 }
 
+.light_mode{
+    background: var(--color5);
+    color: var(--color6);
+}
+
 /* Normal settings */
 * {
     margin: 0;

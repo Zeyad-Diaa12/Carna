@@ -4,9 +4,7 @@ let header=document.querySelector('.header_light');
 let member_card=document.querySelectorAll('.member-light');
 let github=document.querySelectorAll('.github-light');
 let anchor=document.querySelector('.nav').querySelectorAll('a');
-let isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-console.log(isDarkMode);
 
 // Function for active anchor
 active.forEach(element =>{
@@ -22,6 +20,7 @@ active.forEach(element =>{
 // Function Dark mode
 function dark_mode(){
 
+    element.classList.remove("light_mode");
     element.classList.add("dark_mode");
     header.classList.remove("header_light");
     header.classList.add("header_dark");
@@ -38,13 +37,21 @@ function dark_mode(){
         anchor[i].classList.add("dark-mode");
     }
 
+    //Add the theme to the local storage
+    localStorage.setItem('bodyTheme','dark_mode');
+    localStorage.setItem('headerTheme','header_dark');
+    localStorage.setItem('teamCardtheme','member-dark');
+    localStorage.setItem('gitHubTheme','github-dark');
+    localStorage.setItem('anchorTheme','dark-mode');
 }
+
 
 
 // Function Light mode
 function light_mode(){
 
     element.classList.remove("dark_mode");
+    element.classList.add("light_mode");
     header.classList.remove("header_dark");
     header.classList.add("header_light");
     
@@ -60,6 +67,12 @@ function light_mode(){
         anchor[i].classList.add("light-mode");
     }
 
+    //Add the theme class to the local storage
+    localStorage.setItem('bodyTheme','light_mode');
+    localStorage.setItem('headerTheme','header_light');
+    localStorage.setItem('teamCardtheme','member-light');
+    localStorage.setItem('gitHubTheme','github-light');
+    localStorage.setItem('anchorTheme','light-mode');
 }
 
 
@@ -77,4 +90,14 @@ function sendMail()
     body.value='';
     subject.value='';
     
+}
+
+element.classList.add(localStorage.getItem('bodyTheme'));
+header.classList.add(localStorage.getItem('headerTheme'));
+for(let i =0;i<member_card.length;i++){
+    member_card[i].classList.add(localStorage.getItem('teamCardtheme'));
+    github[i].classList.add(localStorage.getItem('gitHubTheme'));
+}
+for(let i=0;i<anchor.length;i++){
+    anchor[i].classList.add(localStorage.getItem('anchorTheme'));
 }
