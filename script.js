@@ -4,7 +4,9 @@ let header=document.querySelector('.header_light');
 let member_card=document.querySelectorAll('.member-light');
 let github=document.querySelectorAll('.github-light');
 let anchor=document.querySelector('.nav').querySelectorAll('a');
+let isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+console.log(isDarkMode);
 
 // Function for active anchor
 active.forEach(element =>{
@@ -23,7 +25,7 @@ function dark_mode(){
     element.classList.add("dark_mode");
     header.classList.remove("header_light");
     header.classList.add("header_dark");
-    
+
     for(let i =0;i<member_card.length;i++){
         member_card[i].classList.remove("member-light");
         member_card[i].classList.add("member-dark");
@@ -45,7 +47,7 @@ function light_mode(){
     element.classList.remove("dark_mode");
     header.classList.remove("header_dark");
     header.classList.add("header_light");
-
+    
     for(let i =0;i<member_card.length;i++){
         member_card[i].classList.remove("member-dark");
         member_card[i].classList.add("member-light");
@@ -74,5 +76,5 @@ function sendMail()
     // Clear data after sending email
     body.value='';
     subject.value='';
-
+    
 }

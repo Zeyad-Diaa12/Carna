@@ -20,6 +20,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -56,8 +57,13 @@ html{
 .header_logo{
     font-size: 40px;
     color: var(--main);
+    transition: all .4s ease;
 }
 
+.header_logo:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
 .nav{
     width: 50%;
     display: flex;
@@ -218,11 +224,16 @@ html{
 .services_body{
     border-radius: 10px;
     height: 15rem;
-    padding: 10% 10%;
+    padding: 10% 5%;
     font-size: 25px;
     background: var(--main);
     color: var(--color5);
     box-shadow: 0 3px 10px rgba(0, 0, 0, .6);  
+}
+
+.services_body h3 {
+    background: linear-gradient(to left,var(--main),var(--secondary));
+    border-radius: 10px;
 }
 
 /* Brands */
