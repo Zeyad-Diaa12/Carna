@@ -60,61 +60,46 @@ p{
     display: flex;
     transition: all .2s ease-in-out;
     margin-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 .email input {
-    border: 1px solid black;
-    border-left: none;
     padding-left: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     outline: none;
+    border: none;
 }
 .email i{
-    background: rgb(229, 229, 229);
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid black;
-    border-right: none;
+    border: none;
 }
 
 .email:hover{
-    color: white;
+    color: #1689d1;
+    border-bottom: 1px solid #1689d1;
 }
-.email input:focus{
-    background: rgb(229, 229, 229);
-}
+
+
 
 
 .password{
     display: flex;
     transition: all .2s ease-in-out;
     margin-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 .password input {
-    border: 1px solid black;
-    border-left: none;
     padding-left: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     outline: none;
+    border: none;
 }
 .password i{
-    background: rgb(229, 229, 229);
     padding: 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px solid black;
-    border-right: none;
+    border: none;
 }
 
 .password:hover{
-    color: white;
+    color: #1689d1;
+    border-bottom: 1px solid #1689d1;
 }
-.password input:focus{
-    background: rgb(229, 229, 229);
-}
-
 
 
 button {
@@ -136,4 +121,17 @@ button:hover{
     background-color: white;
     color: #1689d1;
     cursor: pointer;
+}
+
+.login-card h4{
+    font-size: 20px;
+}
+.login-card a{
+    color: #1689d1;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.login-card a:hover{
+    color: #7357e2;
 }
