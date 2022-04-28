@@ -5,10 +5,27 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Log In</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
+    <div class="login-container">
+        <div class="login-card">
+            <label>Login</label>
+            <p>Incorrect username or password. Try again</p>
+            <div class="email">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="email-value" placeholder="E-Mail">
+            </div>
+    
+            <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="password-value" placeholder="Password">
+            </div>
+            <button onclick="validate()">Log In</button>
+            <h4>Dont have an account? <a href="sign_up.html" target="_blank">Register now</a></h4>
+        </div>
+    </div>
     <script src='script.js'></script>
 </body>
 </html>

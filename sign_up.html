@@ -5,9 +5,27 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='sign_up.css'>
 </head>
 <body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <label>Sign up</label>
+            <input type="text" class="first-name-value" placeholder="First Name">
+    
+            <input type="text" class="last-name-value" placeholder="Last Name">
+
+            <input type="text" class="email-value" placeholder="E-Mail">
+
+            <input type="password" class="password-value" placeholder="Password">
+
+            <p class="wrong-password">Passwords not the same. Try again</p>
+            <input type="password" class="password-renter-value" placeholder="Re-Enter Password">
+
+            <button onclick="validate_input()">Sign Up</button>
+            <h4>Already have an account? <a href="login.html" target="_blank">Log In</a></h4>
+        </div>
+    </div>
     <script src='script.js'></script>
 </body>
 </html>

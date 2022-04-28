@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1689d1;
+}
+.login-container{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+}
+
+.login-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+    margin-left: 35%;
+    height: 350px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+}
+
+label{
+    color: #1689d1;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+p{
+    display: none;
+    color: white;
+    background: rgb(221, 68, 68);
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.email{
+    display: flex;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+}
+.email input {
+    border: 1px solid black;
+    border-left: none;
+    padding-left: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+.email i{
+    background: rgb(229, 229, 229);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.email:hover{
+    color: white;
+}
+.email input:focus{
+    background: rgb(229, 229, 229);
+}
+
+
+.password{
+    display: flex;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+}
+.password input {
+    border: 1px solid black;
+    border-left: none;
+    padding-left: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+.password i{
+    background: rgb(229, 229, 229);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid black;
+    border-right: none;
+}
+
+.password:hover{
+    color: white;
+}
+.password input:focus{
+    background: rgb(229, 229, 229);
+}
+
+
+
+button {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #1689d1;
+    color: white;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+
+button:hover{
+    transform: scale(.9);
+    background-color: white;
+    color: #1689d1;
+    cursor: pointer;
+}

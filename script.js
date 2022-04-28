@@ -101,3 +101,45 @@ for(let i =0;i<member_card.length;i++){
 for(let i=0;i<anchor.length;i++){
     anchor[i].classList.add(localStorage.getItem('anchorTheme'));
 }
+
+
+// Login validation
+
+
+
+function validate(){
+    let email_input = document.querySelector('.email').querySelector('input');
+    let password_input = document.querySelector('.password').querySelector('input');
+    let email_compare = "zeyad@gmail.com";
+    let password_compare = "itProject2022";
+
+    if(email_input.value == email_compare && password_input.value == password_compare){
+        window.location.href = 'index.html';
+    }
+    else{
+        document.querySelector('.login-card').querySelector('p').style.display = "block";
+        
+        email_input.value = '';
+        password_input.value = '';
+    }
+}
+
+
+
+// Sign Up validation
+
+function validate_input(){
+    let password = document.querySelector('.password-value');
+    let password_validate = document.querySelector('.password-renter-value');
+
+    if(password_validate.value == password.value){
+        alert("You are now registered");
+        window.location.href = 'index.html';
+    }
+    else{
+        document.querySelector('.signup-card').querySelector('p').style.display = "block";
+
+        password.value ='';
+        password_validate.value='';
+    }
+}

@@ -45,6 +45,9 @@ html{
     z-index: 999;
     background: var(--color5);
     position: fixed;
+    overflow: hidden;
+    top: 0;
+    height: 12vh;
 }
 
 .header_dark{
@@ -57,6 +60,7 @@ html{
     z-index: 999;
     background: #1c1c1c;
     position: fixed;
+    height: 12vh;
 }
 
 .header_logo{
@@ -465,6 +469,35 @@ footer {
     text-align: center;
     font-weight: 900;
     padding-top: 40px;
+    bottom: 0;
 }
 
 /* Footer End */
+
+.name-container{
+    background-color: #000000;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 55%;
+    transform: translateY(-50%);
+    height: 90%;
+    padding: 70px 10px;
+}
+.name-container img{
+    width: 100px;
+    height: auto;
+}
+
+.brand-container{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 80%;
+    margin-left: 10%;
+    height: 350px;
+    background: var(--main);
+}
