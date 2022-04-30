@@ -105,8 +105,6 @@ for(let i=0;i<anchor.length;i++){
 
 // Login validation
 
-
-
 function validate(){
     let email_input = document.querySelector('.email').querySelector('input');
     let password_input = document.querySelector('.password').querySelector('input');
@@ -138,8 +136,24 @@ function validate_input(){
     }
     else{
         document.querySelector('.signup-card').querySelector('p').style.display = "block";
-
-        password.value ='';
-        password_validate.value='';
     }
+
 }
+
+
+
+
+
+// habd
+
+function playSound(sound){
+    let sound_ = document.getElementById(sound);
+
+    sound_.play();
+}
+
+// function stopSound(sound){
+//     let stop_sound = document.getElementById(sound);
+
+//     stop_sound.pause();
+// }
