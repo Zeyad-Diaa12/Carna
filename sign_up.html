@@ -11,16 +11,16 @@
     <div class="signup-container">
         <div class="signup-card">
             <label>Sign up</label>
-            <input type="text" class="first-name-value" placeholder="First Name">
+            <p class="wrong-password">Something is not right (Passwords may not be the same or some field(s) not complete). Try again</p>
+            <input type="text" class="first-name-value" placeholder="First Name" required>
     
-            <input type="text" class="last-name-value" placeholder="Last Name">
+            <input type="text" class="last-name-value" placeholder="Last Name" required>
 
-            <input type="text" class="email-value" placeholder="E-Mail">
+            <input type="text" class="email-value" placeholder="E-Mail" required>
 
-            <input type="password" class="password-value" placeholder="Password">
+            <input type="password" class="password-value" placeholder="Password" required>
 
-            <p class="wrong-password">Passwords not the same. Try again</p>
-            <input type="password" class="password-renter-value" placeholder="Re-Enter Password">
+            <input type="password" class="password-renter-value" placeholder="Re-Enter Password" required>
 
             <button onclick="validate_input()">Sign Up</button>
             <h4>Already have an account? <a href="login.html" target="_blank">Log In</a></h4>

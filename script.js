@@ -6,7 +6,37 @@ let github=document.querySelectorAll('.github-light');
 let anchor=document.querySelector('.nav').querySelectorAll('a');
 
 
+// Typing Effect
+
+const text =['Welcome to CARNA Not only a car shop!','Created by students of Computer and Artificial Intelligence','2022 IT Project is done!'];
+let i = 0;
+let counter = 0;
+let currentText = '';
+let letter = '';
+
+function type(){
+	if(counter == text.length){
+		counter=0;
+	}
+
+	currentText = text[counter];
+	letter = currentText.slice(0,++i)
+	
+	document.querySelector('.type').innerHTML = letter;
+
+
+	if(letter.length == currentText.length){
+		counter++;
+		i=0;
+	}
+	setTimeout(type,130);
+}
+
+type();
+
+
 // Function for active anchor
+
 active.forEach(element =>{
     
     element.addEventListener('click',function(){
@@ -46,7 +76,6 @@ function dark_mode(){
 }
 
 
-
 // Function Light mode
 function light_mode(){
 
@@ -77,6 +106,7 @@ function light_mode(){
 
 
 // Function to send email
+
 function sendMail()
 {
 
@@ -84,7 +114,7 @@ function sendMail()
     let subject=document.querySelector('.subject_message');
     
     // Opens email 
-    window.location="mailto:zeyaddiaa201@gmail.com?subject="+subject.value+"&body="+body.value;
+    window.location="mailto:zeyaddiaa2@gmail.com?subject="+subject.value+"&body="+body.value;
     
     // Clear data after sending email
     body.value='';
@@ -123,34 +153,34 @@ function validate(){
 }
 
 
-
 // Sign Up validation
 
 function validate_input(){
     let password = document.querySelector('.password-value');
     let password_validate = document.querySelector('.password-renter-value');
+    let first_name = document.querySelector('.first-name-value');
+    let last_name = document.querySelector('.last-name-value');
+    let e_mail = document.querySelector('.email-value');
 
-    if(password_validate.value == password.value){
+    if((password_validate.value == password.value) && ((password.value !== null && password.value !== '' ) && (password_validate.value !== null && password_validate.value !== ''))){
         alert("You are now registered");
         window.location.href = 'index.html';
     }
-    else{
+    else if(((first_name.value == null) || (first_name.value == '')) || ((last_name.value == null) || (last_name.value == '')) || ((e_mail.value == null) || (e_mail.value == ''))){
         document.querySelector('.signup-card').querySelector('p').style.display = "block";
     }
 
 }
 
 
-
-
-
-// habd
+// Play sound on logo carna
 
 function playSound(sound){
     let sound_ = document.getElementById(sound);
 
     sound_.play();
 }
+
 
 // function stopSound(sound){
 //     let stop_sound = document.getElementById(sound);
