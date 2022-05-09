@@ -6,6 +6,16 @@ let github=document.querySelectorAll('.github-light');
 let anchor=document.querySelector('.nav').querySelectorAll('a');
 
 
+element.classList.add(localStorage.getItem('bodyTheme'));
+header.classList.add(localStorage.getItem('headerTheme'));
+for(let i =0;i<member_card.length;i++){
+    member_card[i].classList.add(localStorage.getItem('teamCardtheme'));
+    github[i].classList.add(localStorage.getItem('gitHubTheme'));
+}
+for(let i=0;i<anchor.length;i++){
+    anchor[i].classList.add(localStorage.getItem('anchorTheme'));
+}
+
 // Typing Effect
 
 const text =['Welcome to CARNA Not only a car shop!','Created by students of Computer and Artificial Intelligence','2022 IT Project is done!'];
@@ -122,15 +132,7 @@ function sendMail()
     
 }
 
-element.classList.add(localStorage.getItem('bodyTheme'));
-header.classList.add(localStorage.getItem('headerTheme'));
-for(let i =0;i<member_card.length;i++){
-    member_card[i].classList.add(localStorage.getItem('teamCardtheme'));
-    github[i].classList.add(localStorage.getItem('gitHubTheme'));
-}
-for(let i=0;i<anchor.length;i++){
-    anchor[i].classList.add(localStorage.getItem('anchorTheme'));
-}
+// 
 
 
 // Login validation
