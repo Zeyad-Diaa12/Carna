@@ -184,8 +184,8 @@ function playSound(sound){
 }
 
 
-// function stopSound(sound){
-//     let stop_sound = document.getElementById(sound);
+function stopSound(sound){
+    let stop_sound = document.getElementById(sound);
 
-//     stop_sound.pause();
-// }
+    stop_sound.pause();
+}
